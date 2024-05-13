@@ -33,7 +33,7 @@ axios
   })
   .catch(function(error) {
     console.log(error);
-    error.classList.toggle("hide");
+    errorVal.classList.toggle("hide");
     loaderVal.classList.toggle("hide");
   })
 
@@ -73,7 +73,7 @@ axios
   })
   .catch(function(error) {
    console.log(error);
-   error.classList.toggle("hide");
+   errorVal.classList.toggle("hide");
     loaderVal.classList.toggle("hide");
   });
 
