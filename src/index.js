@@ -1,14 +1,14 @@
-import SlimSelect from 'slim-select'
+import SlimSelect from 'slim-select';
 import Notiflix from 'notiflix';
 import { TheCatAPI } from "@thatapicompany/thecatapi";
 import axios from "axios";
 
-axios.defaults.headers.common["x-api-key"] = "live_FLCrVSt3i1kfU28uyZydfTdmrT1JSk5CXAJoUaKHSZ5qjNSLIj0PcLCHcqi79a3V";
+axios.defaults.headers.common["x-api-key"] = process.env.API_KEY;
 new SlimSelect({
   select: '#selectElement'
 })
 
-//const theCatAPI = new TheCatAPI("live_FLCrVSt3i1kfU28uyZydfTdmrT1JSk5CXAJoUaKHSZ5qjNSLIj0PcLCHcqi79a3V");
+//const theCatAPI = new TheCatAPI();
 const dropDownMenuVal = document.querySelector(".breed-select");
 const loaderVal = document.querySelector(".loader");
 const catInfo = document.querySelector(".cat-info");
