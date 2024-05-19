@@ -3,7 +3,7 @@ import Notiflix from 'notiflix';
 import { TheCatAPI } from "@thatapicompany/thecatapi";
 import axios from "axios";
 
-axios.defaults.headers.common["x-api-key"] = process.env.API_KEY;
+axios.defaults.headers.common["x-api-key"] = "live_FLCrVSt3i1kfU28uyZydfTdmrT1JSk5CXAJoUaKHSZ5qjNSLIj0PcLCHcqi79a3V";
 new SlimSelect({
   select: '#selectElement'
 })
